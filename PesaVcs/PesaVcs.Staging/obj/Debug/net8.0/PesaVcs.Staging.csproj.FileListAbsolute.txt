@@ -1,0 +1,16 @@
+/home/sam/sol/PesaVcs/PesaVcs.Staging/bin/Debug/net8.0/PesaVcs.Staging.deps.json
+/home/sam/sol/PesaVcs/PesaVcs.Staging/bin/Debug/net8.0/PesaVcs.Staging.dll
+/home/sam/sol/PesaVcs/PesaVcs.Staging/bin/Debug/net8.0/PesaVcs.Staging.pdb
+/home/sam/sol/PesaVcs/PesaVcs.Staging/bin/Debug/net8.0/PesaVcs.Core.dll
+/home/sam/sol/PesaVcs/PesaVcs.Staging/bin/Debug/net8.0/PesaVcs.Core.pdb
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.csproj.AssemblyReference.cache
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.GeneratedMSBuildEditorConfig.editorconfig
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.AssemblyInfoInputs.cache
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.AssemblyInfo.cs
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.csproj.CoreCompileInputs.cache
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.sourcelink.json
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs..18AE869B.Up2Date
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.dll
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/refint/PesaVcs.Staging.dll
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/PesaVcs.Staging.pdb
+/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/Debug/net8.0/ref/PesaVcs.Staging.dll

@@ -1,0 +1,333 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sam/sol/PesaVcs/PesaVcs.CLI/PesaVcs.CLI.csproj": {}
+  },
+  "projects": {
+    "/home/sam/sol/PesaVcs/PesaVcs.CLI/PesaVcs.CLI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sam/sol/PesaVcs/PesaVcs.CLI/PesaVcs.CLI.csproj",
+        "projectName": "PesaVcs.CLI",
+        "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.CLI/PesaVcs.CLI.csproj",
+        "packagesPath": "/home/sam/.nuget/packages/",
+        "outputPath": "/home/sam/sol/PesaVcs/PesaVcs.CLI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj": {
+                "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj"
+              },
+              "/home/sam/sol/PesaVcs/PesaVcs.Network/PesaVcs.Network.csproj": {
+                "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Network/PesaVcs.Network.csproj"
+              },
+              "/home/sam/sol/PesaVcs/PesaVcs.Staging/PesaVcs.Staging.csproj": {
+                "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Staging/PesaVcs.Staging.csproj"
+              },
+              "/home/sam/sol/PesaVcs/PesaVcs.Storage/PesaVcs.Storage.csproj": {
+                "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Storage/PesaVcs.Storage.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "System.CommandLine": {
+              "target": "Package",
+              "version": "[2.0.0-beta4.22272.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj",
+        "projectName": "PesaVcs.Core",
+        "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj",
+        "packagesPath": "/home/sam/.nuget/packages/",
+        "outputPath": "/home/sam/sol/PesaVcs/PesaVcs.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sam/sol/PesaVcs/PesaVcs.Network/PesaVcs.Network.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sam/sol/PesaVcs/PesaVcs.Network/PesaVcs.Network.csproj",
+        "projectName": "PesaVcs.Network",
+        "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Network/PesaVcs.Network.csproj",
+        "packagesPath": "/home/sam/.nuget/packages/",
+        "outputPath": "/home/sam/sol/PesaVcs/PesaVcs.Network/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj": {
+                "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sam/sol/PesaVcs/PesaVcs.Staging/PesaVcs.Staging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sam/sol/PesaVcs/PesaVcs.Staging/PesaVcs.Staging.csproj",
+        "projectName": "PesaVcs.Staging",
+        "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Staging/PesaVcs.Staging.csproj",
+        "packagesPath": "/home/sam/.nuget/packages/",
+        "outputPath": "/home/sam/sol/PesaVcs/PesaVcs.Staging/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj": {
+                "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sam/sol/PesaVcs/PesaVcs.Storage/PesaVcs.Storage.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sam/sol/PesaVcs/PesaVcs.Storage/PesaVcs.Storage.csproj",
+        "projectName": "PesaVcs.Storage",
+        "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Storage/PesaVcs.Storage.csproj",
+        "packagesPath": "/home/sam/.nuget/packages/",
+        "outputPath": "/home/sam/sol/PesaVcs/PesaVcs.Storage/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sam/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj": {
+                "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
