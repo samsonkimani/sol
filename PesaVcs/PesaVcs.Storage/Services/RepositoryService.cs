@@ -1,5 +1,3 @@
-using System;
-using System.IO;
 using PesaVcs.Core.Interfaces;
 
 namespace PesaVcs.Storage.Services
@@ -21,7 +19,7 @@ namespace PesaVcs.Storage.Services
 
                 // Create subdirectories
                 Directory.CreateDirectory(Path.Combine(repoPath, "objects"));
-                Directory.CreateDirectory(Path.Combine(repoPath, "refs", "heads")); // Ensure intermediate directories exist
+                Directory.CreateDirectory(Path.Combine(repoPath, "refs", "heads"));
 
                 // Create initial HEAD file
                 File.WriteAllText(Path.Combine(repoPath, "HEAD"), "ref: refs/heads/main");

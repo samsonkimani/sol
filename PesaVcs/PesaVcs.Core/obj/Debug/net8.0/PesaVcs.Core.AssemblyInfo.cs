@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PesaVcs.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dedb1db03c5875026f897fe9405c9369500ef9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc38d0d4698dbe1079f7efac77dfa293bd1b68c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PesaVcs.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PesaVcs.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
