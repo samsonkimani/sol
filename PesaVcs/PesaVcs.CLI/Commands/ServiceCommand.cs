@@ -1,6 +1,7 @@
 using System.CommandLine;
 using Microsoft.Extensions.DependencyInjection;
 using PesaVcs.Core.Interfaces;
+using PesaVcs.Staging.Services;
 
 namespace PesaVcs.CLI.Commands
 {
@@ -13,7 +14,10 @@ namespace PesaVcs.CLI.Commands
             var stageAllCommand = new Command("all", "Stage all changes");
             stageAllCommand.SetHandler(() =>
             {
-                var indexService = serviceProvider.GetRequiredService<IIndexService>();
+                string repoPath = Directory.GetCurrentDirectory();
+                
+                
+                var indexService = new IndexService(repoPath);
                 indexService.StageAllChanges();
                 Console.WriteLine("All changes staged.");
             });
@@ -25,7 +29,11 @@ namespace PesaVcs.CLI.Commands
 
             stageCommand.SetHandler((string filePath) =>
             {
-                var indexService = serviceProvider.GetRequiredService<IIndexService>();
+                // Get the current directory as the repository path
+                string repoPath = Directory.GetCurrentDirectory();
+                
+                // Manually create IndexService with the repository path
+                var indexService = new IndexService(repoPath);
                 indexService.StageFile(filePath);
                 Console.WriteLine($"File staged: {filePath}");
             }, filePathArgument);

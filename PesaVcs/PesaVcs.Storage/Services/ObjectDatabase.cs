@@ -1,69 +1,95 @@
+using System;
+using System.IO;
+using System.Security.Cryptography;
 using PesaVcs.Core.Interfaces;
 
 namespace PesaVcs.Storage.Services
 {
     public class FileSystemObjectDatabase : IObjectDatabase
     {
-        private readonly string _storagePath;
-
-        public FileSystemObjectDatabase(string storagePath)
+        private readonly string _objectsPath;
+    
+        public FileSystemObjectDatabase(string repositoryPath)
         {
-            _storagePath = storagePath;
-
-            // Ensure the storage directory exists
-            if (!Directory.Exists(_storagePath))
+            _objectsPath = Path.Combine(repositoryPath, ".pesavcs", "objects");
+            
+            // Ensure objects directory exists
+            if (!Directory.Exists(_objectsPath))
             {
-                Directory.CreateDirectory(_storagePath);
+                Directory.CreateDirectory(_objectsPath);
             }
         }
 
         public void AddObject(string objectId, byte[] data)
         {
-            string filePath = GetFilePath(objectId);
+            if (string.IsNullOrEmpty(objectId))
+                throw new ArgumentNullException(nameof(objectId), "Object ID cannot be null or empty");
 
-            // If the object already exists, throw an exception
-            if (File.Exists(filePath))
+            if (data == null)
+                throw new ArgumentNullException(nameof(data), "Object data cannot be null");
+
+            try
             {
-                throw new InvalidOperationException($"Object with ID '{objectId}' already exists.");
-            }
+                string objectPath = Path.Combine(_objectsPath, objectId);
+               
+                string directoryPath = Path.GetDirectoryName(objectPath) ?? string.Empty;
+                
+                if (!string.IsNullOrEmpty(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
 
-            File.WriteAllBytes(filePath, data);
+                File.WriteAllBytes(objectPath, data);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException($"Failed to add object {objectId}: {ex.Message}", ex);
+            }
         }
 
         public byte[] GetObject(string objectId)
         {
-            string filePath = GetFilePath(objectId);
+            if (string.IsNullOrEmpty(objectId))
+                throw new ArgumentNullException(nameof(objectId), "Object ID cannot be null or empty");
 
-            if (!File.Exists(filePath))
-            {
-                throw new FileNotFoundException($"Object with ID '{objectId}' not found.");
-            }
+            string objectPath = Path.Combine(_objectsPath, objectId);
 
-            return File.ReadAllBytes(filePath);
+            if (!File.Exists(objectPath))
+                throw new FileNotFoundException($"Object {objectId} not found");
+
+            return File.ReadAllBytes(objectPath);
         }
 
         public bool ObjectExists(string objectId)
         {
-            string filePath = GetFilePath(objectId);
-            return File.Exists(filePath);
+            if (string.IsNullOrEmpty(objectId))
+                return false;
+
+            string objectPath = Path.Combine(_objectsPath, objectId);
+            return File.Exists(objectPath);
         }
 
         public void DeleteObject(string objectId)
         {
-            string filePath = GetFilePath(objectId);
+            if (string.IsNullOrEmpty(objectId))
+                throw new ArgumentNullException(nameof(objectId), "Object ID cannot be null or empty");
 
-            if (!File.Exists(filePath))
+            string objectPath = Path.Combine(_objectsPath, objectId);
+
+            if (File.Exists(objectPath))
             {
-                throw new FileNotFoundException($"Object with ID '{objectId}' not found.");
+                File.Delete(objectPath);
             }
-
-            File.Delete(filePath);
         }
 
-        private string GetFilePath(string objectId)
+        // Helper method to generate object ID (SHA-1 hash)
+        public static string GenerateObjectId(byte[] data)
         {
-            // Generate a file path based on the object ID
-            return Path.Combine(_storagePath, objectId);
+            using (SHA1 sha1 = SHA1.Create())
+            {
+                byte[] hashBytes = sha1.ComputeHash(data);
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
         }
     }
 }

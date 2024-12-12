@@ -34,7 +34,11 @@ namespace PesaVcs.Staging.Services
             {
                 var relativePath = Path.GetRelativePath(_repoPath, filePath);
                 var stagedFilePath = Path.Combine(_indexPath, relativePath);
-                Directory.CreateDirectory(Path.GetDirectoryName(stagedFilePath));
+                var directoryPath = Path.GetDirectoryName(stagedFilePath);
+                if (directoryPath != null)
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
                 File.Copy(filePath, stagedFilePath, true);
             }
         }

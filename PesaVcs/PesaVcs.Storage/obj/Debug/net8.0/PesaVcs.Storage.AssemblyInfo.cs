@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PesaVcs.Storage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc38d0d4698dbe1079f7efac77dfa293bd1b68c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c77113d6d8d40a1d401cb58dcf1a0bdc0d28e67")]
 [assembly: System.Reflection.AssemblyProductAttribute("PesaVcs.Storage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PesaVcs.Storage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

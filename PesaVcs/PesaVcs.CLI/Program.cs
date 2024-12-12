@@ -27,7 +27,10 @@ namespace PesaVcs.CLI
             var rootCommand = new RootCommand("PesaVcs - A Custom Version Control System");
 
             // Add the init command
-            rootCommand.AddCommand(InitCommand.CreateCommand(serviceProvider));           
+            rootCommand.AddCommand(InitCommand.CreateCommand(serviceProvider));    
+            rootCommand.AddCommand(StageCommand.CreateCommand(serviceProvider));  
+            rootCommand.AddCommand(UnstageCommand.CreateCommand(serviceProvider));
+            rootCommand.AddCommand(StatusCommand.CreateCommand(serviceProvider));     
 
 
             rootCommand.Invoke(args);
@@ -45,7 +48,7 @@ namespace PesaVcs.CLI
             
             // // Staging services
             services.AddSingleton<IIndexService, IndexService>();
-            // services.AddSingleton<IStagingAreaManager, StagingAreaManager>();
+            services.AddSingleton<IStagingAreaManager, StagingAreaManager>();
             
             // // Network services
             // services.AddSingleton<IRemoteRepositoryService, RemoteRepositoryService>();
