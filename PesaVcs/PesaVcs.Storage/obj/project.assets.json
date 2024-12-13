@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "PesaVcs.Branches/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "PesaVcs.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PesaVcs.Branches.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PesaVcs.Branches.dll": {}
+        }
+      },
       "PesaVcs.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -15,6 +28,11 @@
     }
   },
   "libraries": {
+    "PesaVcs.Branches/1.0.0": {
+      "type": "project",
+      "path": "../PesaVcs.Branches/PesaVcs.Branches.csproj",
+      "msbuildProject": "../PesaVcs.Branches/PesaVcs.Branches.csproj"
+    },
     "PesaVcs.Core/1.0.0": {
       "type": "project",
       "path": "../PesaVcs.Core/PesaVcs.Core.csproj",
@@ -23,6 +41,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "PesaVcs.Branches >= 1.0.0",
       "PesaVcs.Core >= 1.0.0"
     ]
   },
@@ -51,6 +70,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "/home/sam/sol/PesaVcs/PesaVcs.Branches/PesaVcs.Branches.csproj": {
+              "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Branches/PesaVcs.Branches.csproj"
+            },
             "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj": {
               "projectPath": "/home/sam/sol/PesaVcs/PesaVcs.Core/PesaVcs.Core.csproj"
             }

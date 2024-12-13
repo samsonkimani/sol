@@ -39,3 +39,5 @@
 /home/sam/sol/PesaVcs/PesaVcs.CLI/obj/Debug/net8.0/PesaVcs.CLI.pdb
 /home/sam/sol/PesaVcs/PesaVcs.CLI/obj/Debug/net8.0/PesaVcs.CLI.genruntimeconfig.cache
 /home/sam/sol/PesaVcs/PesaVcs.CLI/obj/Debug/net8.0/ref/PesaVcs.CLI.dll
+/home/sam/sol/PesaVcs/PesaVcs.CLI/bin/Debug/net8.0/PesaVcs.Branches.dll
+/home/sam/sol/PesaVcs/PesaVcs.CLI/bin/Debug/net8.0/PesaVcs.Branches.pdb

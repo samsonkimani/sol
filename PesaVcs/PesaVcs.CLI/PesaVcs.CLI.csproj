@@ -5,6 +5,7 @@
     <ProjectReference Include="..\PesaVcs.Storage\PesaVcs.Storage.csproj" />
     <ProjectReference Include="..\PesaVcs.Staging\PesaVcs.Staging.csproj" />
     <ProjectReference Include="..\PesaVcs.Network\PesaVcs.Network.csproj" />
+    <ProjectReference Include="..\PesaVcs.Branches\PesaVcs.Branches.csproj" />
   </ItemGroup>
 
   <ItemGroup>

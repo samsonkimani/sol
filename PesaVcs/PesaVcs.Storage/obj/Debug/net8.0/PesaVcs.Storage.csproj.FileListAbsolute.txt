@@ -14,3 +14,5 @@
 /home/sam/sol/PesaVcs/PesaVcs.Storage/obj/Debug/net8.0/refint/PesaVcs.Storage.dll
 /home/sam/sol/PesaVcs/PesaVcs.Storage/obj/Debug/net8.0/PesaVcs.Storage.pdb
 /home/sam/sol/PesaVcs/PesaVcs.Storage/obj/Debug/net8.0/ref/PesaVcs.Storage.dll
+/home/sam/sol/PesaVcs/PesaVcs.Storage/bin/Debug/net8.0/PesaVcs.Branches.dll
+/home/sam/sol/PesaVcs/PesaVcs.Storage/bin/Debug/net8.0/PesaVcs.Branches.pdb

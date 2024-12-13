@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PesaVcs.Core\PesaVcs.Core.csproj" />
+    <ProjectReference Include="..\PesaVcs.Storage\PesaVcs.Storage.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

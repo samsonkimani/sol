@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace PesaVcs.Core.Services
+namespace PesaVcs.Storage.Services
 {
     public class TreeEntry
     {
@@ -144,6 +144,7 @@ namespace PesaVcs.Core.Services
 
             byte[] commitBytes = Encoding.UTF8.GetBytes(commitContent.ToString());
             commitDetails.Hash = ComputeSHA1Hash(commitBytes);
+            commitContent.AppendLine($"Hash {commitDetails.Hash}");
 
             // Store commit object
             File.WriteAllBytes(Path.Combine(_objectsPath, commitDetails.Hash), commitBytes);
@@ -247,6 +248,8 @@ namespace PesaVcs.Core.Services
                     commit.Author = line.Substring(7).Trim();
                 else if (line.StartsWith("timestamp "))
                     commit.Timestamp = DateTime.Parse(line.Substring(10).Trim());
+                else if (line.StartsWith("Hash "))
+                    commit.Hash = line.Substring(5).Trim();
             }
 
             // Last line or lines after blank line is the commit message

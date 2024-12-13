@@ -19,5 +19,7 @@ namespace PesaVcs.Core.Interfaces
     {
         public string? FilePath { get; set; }
         public string? Status { get; set; }
+
+         public string? Hash { get; set; }
     }
 }

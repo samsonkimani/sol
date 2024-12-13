@@ -9,6 +9,7 @@
       "PesaVcs.CLI/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
+          "PesaVcs.Branches": "1.0.0",
           "PesaVcs.Core": "1.0.0",
           "PesaVcs.Network": "1.0.0",
           "PesaVcs.Staging": "1.0.0",
@@ -87,6 +88,17 @@
           }
         }
       },
+      "PesaVcs.Branches/1.0.0": {
+        "dependencies": {
+          "PesaVcs.Core": "1.0.0"
+        },
+        "runtime": {
+          "PesaVcs.Branches.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "PesaVcs.Core/1.0.0": {
         "runtime": {
           "PesaVcs.Core.dll": {
@@ -108,7 +120,8 @@
       },
       "PesaVcs.Staging/1.0.0": {
         "dependencies": {
-          "PesaVcs.Core": "1.0.0"
+          "PesaVcs.Core": "1.0.0",
+          "PesaVcs.Storage": "1.0.0"
         },
         "runtime": {
           "PesaVcs.Staging.dll": {
@@ -119,6 +132,7 @@
       },
       "PesaVcs.Storage/1.0.0": {
         "dependencies": {
+          "PesaVcs.Branches": "1.0.0",
           "PesaVcs.Core": "1.0.0"
         },
         "runtime": {
@@ -156,6 +170,11 @@
       "sha512": "sha512-1uqED/q2H0kKoLJ4+hI2iPSBSEdTuhfCYADeJrAqERmiGQ2NNacYKRNEQ+gFbU4glgVyK8rxI+ZOe1onEtr/Pg==",
       "path": "system.commandline/2.0.0-beta4.22272.1",
       "hashPath": "system.commandline.2.0.0-beta4.22272.1.nupkg.sha512"
+    },
+    "PesaVcs.Branches/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "PesaVcs.Core/1.0.0": {
       "type": "project",

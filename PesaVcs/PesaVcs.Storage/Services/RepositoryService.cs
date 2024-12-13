@@ -1,9 +1,7 @@
-using System;
-using System.IO;
-using System.Net.Http;
+
 using System.Text.Json;
-using System.Collections.Generic;
 using PesaVcs.Core.Interfaces;
+using PesaVcs.Branches.Services;
 
 namespace PesaVcs.Storage.Services
 {
@@ -11,9 +9,10 @@ namespace PesaVcs.Storage.Services
     {
         private const string REPO_FOLDER = ".pesavcs";
 
+
         public void Initialize(string path)
         {
-           try
+            try
             {
                 // Ensure path exists
                 Directory.CreateDirectory(path);
@@ -29,9 +28,11 @@ namespace PesaVcs.Storage.Services
                 // Create initial HEAD file
                 File.WriteAllText(Path.Combine(repoPath, "HEAD"), "ref: refs/heads/main");
 
-                // Create initial main branch file
-                var mainBranchPath = Path.Combine(repoPath, "refs", "heads", "main");
-                File.WriteAllText(mainBranchPath, ""); // Create an empty file for the main branch
+                // Use BranchService to create the main branch
+                var branchService = new BranchService(path);
+                branchService.CreateBranch("main");
+
+                Console.WriteLine($"Initialized empty PesaVcs repository in {path}");
             }
             catch (Exception ex)
             {

@@ -7,6 +7,7 @@ using PesaVcs.Storage.Services;
 using PesaVcs.Staging.Services;
 using PesaVcs.Network.Services;
 using PesaVcs.CLI.Commands;
+using PesaVcs.Branches.Services;
 
 
 
@@ -30,7 +31,11 @@ namespace PesaVcs.CLI
             rootCommand.AddCommand(InitCommand.CreateCommand(serviceProvider));    
             rootCommand.AddCommand(StageCommand.CreateCommand(serviceProvider));  
             rootCommand.AddCommand(UnstageCommand.CreateCommand(serviceProvider));
-            rootCommand.AddCommand(StatusCommand.CreateCommand(serviceProvider));     
+            rootCommand.AddCommand(StatusCommand.CreateCommand(serviceProvider));   
+            rootCommand.AddCommand(BranchCommand.CreateCommand(serviceProvider));  
+            rootCommand.AddCommand(CommitCommand.CreateCommand(serviceProvider));
+            rootCommand.AddCommand(DiffCommand.CreateCommand(serviceProvider));
+            rootCommand.AddCommand(LogCommand.CreateCommand(serviceProvider));
 
 
             rootCommand.Invoke(args);
@@ -54,7 +59,7 @@ namespace PesaVcs.CLI
             // services.AddSingleton<IRemoteRepositoryService, RemoteRepositoryService>();
             
             // // Branch services
-            // services.AddSingleton<IBranchService, BranchService>();
+            services.AddSingleton<IBranchService, BranchService>();
         }
     }
 }

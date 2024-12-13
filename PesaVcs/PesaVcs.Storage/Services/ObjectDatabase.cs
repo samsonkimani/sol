@@ -13,7 +13,6 @@ namespace PesaVcs.Storage.Services
         {
             _objectsPath = Path.Combine(repositoryPath, ".pesavcs", "objects");
             
-            // Ensure objects directory exists
             if (!Directory.Exists(_objectsPath))
             {
                 Directory.CreateDirectory(_objectsPath);
@@ -33,7 +32,7 @@ namespace PesaVcs.Storage.Services
                 string objectPath = Path.Combine(_objectsPath, objectId);
                
                 string directoryPath = Path.GetDirectoryName(objectPath) ?? string.Empty;
-                
+
                 if (!string.IsNullOrEmpty(directoryPath))
                 {
                     Directory.CreateDirectory(directoryPath);
@@ -82,7 +81,6 @@ namespace PesaVcs.Storage.Services
             }
         }
 
-        // Helper method to generate object ID (SHA-1 hash)
         public static string GenerateObjectId(byte[] data)
         {
             using (SHA1 sha1 = SHA1.Create())

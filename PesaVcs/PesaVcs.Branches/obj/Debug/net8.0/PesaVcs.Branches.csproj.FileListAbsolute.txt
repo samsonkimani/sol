@@ -1,0 +1,16 @@
+/home/sam/sol/PesaVcs/PesaVcs.Branches/bin/Debug/net8.0/PesaVcs.Branches.deps.json
+/home/sam/sol/PesaVcs/PesaVcs.Branches/bin/Debug/net8.0/PesaVcs.Branches.dll
+/home/sam/sol/PesaVcs/PesaVcs.Branches/bin/Debug/net8.0/PesaVcs.Branches.pdb
+/home/sam/sol/PesaVcs/PesaVcs.Branches/bin/Debug/net8.0/PesaVcs.Core.dll
+/home/sam/sol/PesaVcs/PesaVcs.Branches/bin/Debug/net8.0/PesaVcs.Core.pdb
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.csproj.AssemblyReference.cache
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.GeneratedMSBuildEditorConfig.editorconfig
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.AssemblyInfoInputs.cache
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.AssemblyInfo.cs
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.csproj.CoreCompileInputs.cache
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.sourcelink.json
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs..FC1D60D9.Up2Date
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.dll
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/refint/PesaVcs.Branches.dll
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/PesaVcs.Branches.pdb
+/home/sam/sol/PesaVcs/PesaVcs.Branches/obj/Debug/net8.0/ref/PesaVcs.Branches.dll

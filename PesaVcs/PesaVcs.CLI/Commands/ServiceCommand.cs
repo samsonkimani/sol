@@ -42,7 +42,7 @@ namespace PesaVcs.CLI.Commands
         }
     }
 
-    public static class UnstageCommand
+   public static class UnstageCommand
     {
         public static Command CreateCommand(IServiceProvider serviceProvider)
         {
@@ -52,7 +52,11 @@ namespace PesaVcs.CLI.Commands
 
             unstageCommand.SetHandler((string filePath) =>
             {
-                var indexService = serviceProvider.GetRequiredService<IIndexService>();
+                // Get the current directory as the repository path
+                string repoPath = Directory.GetCurrentDirectory();
+                
+                // Manually create IndexService with the repository path
+                var indexService = new IndexService(repoPath);
                 indexService.UnstageFile(filePath);
                 Console.WriteLine($"File unstaged: {filePath}");
             }, filePathArgument);
@@ -69,7 +73,11 @@ namespace PesaVcs.CLI.Commands
 
             statusCommand.SetHandler(() =>
             {
-                var indexService = serviceProvider.GetRequiredService<IIndexService>();
+                // Get the current directory as the repository path
+                string repoPath = Directory.GetCurrentDirectory();
+                
+                // Manually create IndexService with the repository path
+                var indexService = new IndexService(repoPath);
                 var changes = indexService.GetChanges();
 
                 Console.WriteLine("Staged Changes:");

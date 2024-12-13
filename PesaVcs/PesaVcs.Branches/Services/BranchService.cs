@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+
 using PesaVcs.Core.Interfaces;
 
 namespace PesaVcs.Branches.Services
@@ -103,9 +100,17 @@ namespace PesaVcs.Branches.Services
 
         private string GetCurrentCommit()
         {
-            // This would typically read the current commit hash from HEAD or the current branch ref
-            // For now, i will return empty but should implement a more robust functionality to get the commit
-            return string.Empty;
+            var currentBranch = GetCurrentBranch();
+            
+            if (string.IsNullOrEmpty(currentBranch.Name))
+                throw new InvalidOperationException("Current branch name is null or empty");
+
+            string branchRefPath = Path.Combine(_refsPath, currentBranch.Name);
+            
+            if (!File.Exists(branchRefPath))
+                return string.Empty;
+
+            return File.ReadAllText(branchRefPath).Trim();
         }
     }
 }

@@ -15,11 +15,11 @@ namespace PesaVcs.Storage.Services
         /// <summary>
         /// Creates a new commit and saves it to the object database.
         /// </summary>
-        public Commit CreateCommit(string message, string author, string email)
+        public PesaVcs.Core.Interfaces.Commit CreateCommit(string message, string author, string email)
         {
             ValidateCommitInput(message, author, email);
 
-            var commit = new Commit
+            var commit = new PesaVcs.Core.Interfaces.Commit
             {
                 Id = Guid.NewGuid().ToString(),
                 Date = DateTime.UtcNow,
