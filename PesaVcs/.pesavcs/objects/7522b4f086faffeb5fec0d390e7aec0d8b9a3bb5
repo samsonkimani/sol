@@ -1,0 +1,193 @@
+## PesaVcs: A Custom Version Control System
+### Project Overview
+
+PesaVcs is a custom version control system inspired by Git, implemented in C# using a modular, component-based architecture. The project is designed to demonstrate version control concepts through a clean, extensible implementation. This is also a good opportunity for me to practice my
+c# skills. I mostly work with python, nodejs and occasionally php. 
+
+
+Project Structure
+### Modules
+
+#### PesaVcs.CLI
+
+Command-line interface for user interactions
+Handles user commands and orchestrates other modules
+Entry point for the application
+
+
+#### PesaVcs.Core
+
+Contains core domain models and abstractions
+Defines interfaces and fundamental data structures
+Provides base classes and contracts for other modules
+
+
+#### PesaVcs.Storage
+
+Manages repository and object storage
+Handles file system interactions
+Implements data persistence mechanisms
+
+
+#### PesaVcs.Staging
+
+Manages staging area and index
+Handles file tracking and preparation for commits
+Provides staging-related services
+
+
+#### PesaVcs.Network
+
+Manages network operations and remote interactions
+Implements protocols for remote repository communication
+Supports potential future network-related features
+
+
+#### PesaVcs.Tests
+
+Comprehensive test suite
+Ensures reliability and correctness of implementation
+
+#### PesaVcs.Branches
+
+Manages branch creation, deletion, switching, listing branches and displaying current branch
+
+
+
+
+
+### Getting Started
+-------- Prerequisites ----------------
+
+.NET 6.0 SDK or later
+Visual Studio 2022 or Visual Studio Code (recommended)
+
+### Installation
+
+Clone the repository
+
+Then
+
+```cd PesaVcs```
+
+Restore NuGet packages
+
+```dotnet restore```
+
+Running the Project
+From Command Line
+
+```dotnet build```
+
+# Run the CLI
+```dotnet run --project PesaVcs.CLI```
+
+### Sample commands
+in the root directory
+
+## pesavcs init: Initialize a new repository
+
+```dotnet run --project PesaVcs.CLI init```
+
+this will create a .pesavcs folder
+
+sample output
+```sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI init
+Initialized empty PesaVcs repository in /home/sam/sol/PesaVcs```
+
+## pesavcs branch
+On initialization, main branch was created
+
+To view newly created branch
+
+### current
+```
+dotnet run --project PesaVcs.CLI branch current
+```
+sample outout
+```sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch current
+Current branch: main
+```
+
+### Creating new branch
+
+```
+dotnet run --project PesaVcs.CLI branch create samson
+```
+
+sample output
+
+```sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch create samson
+Branch 'samson' created successfully.
+sam@Sam:~/sol/PesaVcs$ 
+```
+
+### Listing all branches
+
+```
+dotnet run --project PesaVcs.CLI branch list
+```
+
+sample output
+```sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch list
+Branches:
+* main
+  samson
+```
+
+### switching branch
+
+```dotnet run --project PesaVcs.CLI branch switch samson```
+
+sample output
+    Here i have combined a couple of commands to demonstrate switching
+
+```
+sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch switch samson
+Switched to branch 'samson'.
+sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch current
+Current branch: samson
+sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch list
+Branches:
+  main
+* samson
+sam@Sam:~/sol/PesaVcs$ 
+```
+
+### deleting branch
+
+Note: cannot delete cuttent branch
+
+```
+dotnet run --project PesaVcs.CLI branch delete main
+```
+
+``` dotnet run --project PesaVcs.CLI branch delete samson
+Error deleting branch: Cannot delete current branch```
+
+can delete another branch
+
+```sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch delete main
+Branch 'main' deleted successfully.
+```
+
+### showing current branch
+
+```
+dotnet run --project PesaVcs.CLI branch current
+```
+
+sample output
+
+```
+sam@Sam:~/sol/PesaVcs$ dotnet run --project PesaVcs.CLI branch current
+Current branch: samson
+sam@Sam:~/sol/PesaVcs$ 
+```
+
+## staging
+
+Here i have implemented stage all and stage a file
+
+### staging all
+    

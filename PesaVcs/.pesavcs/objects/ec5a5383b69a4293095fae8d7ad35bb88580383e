@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\PesaVcs.Core\PesaVcs.Core.csproj" />
+    <ProjectReference Include="..\PesaVcs.Storage\PesaVcs.Storage.csproj" />
+    <ProjectReference Include="..\PesaVcs.Staging\PesaVcs.Staging.csproj" />
+    <ProjectReference Include="..\PesaVcs.Network\PesaVcs.Network.csproj" />
+    <ProjectReference Include="..\PesaVcs.Branches\PesaVcs.Branches.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

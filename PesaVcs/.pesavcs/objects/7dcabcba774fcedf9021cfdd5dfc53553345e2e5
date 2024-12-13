@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesaVcs.CLI", "PesaVcs.CLI\PesaVcs.CLI.csproj", "{25078ADE-5315-4CB3-8EF2-59EA5EC671BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesaVcs.Core", "PesaVcs.Core\PesaVcs.Core.csproj", "{9B18E68E-BF4B-48DF-9DE4-29B905654895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesaVcs.Storage", "PesaVcs.Storage\PesaVcs.Storage.csproj", "{3441BCB5-992C-4C27-8511-E9F2BB6536FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesaVcs.Staging", "PesaVcs.Staging\PesaVcs.Staging.csproj", "{0892DBBD-02C4-4A30-B0A9-D8D1603C8B79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesaVcs.Network", "PesaVcs.Network\PesaVcs.Network.csproj", "{F2E6EB57-4304-4316-B29D-DA36D3958782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesaVcs.Tests", "PesaVcs.Tests\PesaVcs.Tests.csproj", "{824B37E8-FD13-4BDC-A53A-BBD39CB3D7A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesaVcs.Branches", "PesaVcs.Branches\PesaVcs.Branches.csproj", "{A3DD95FD-8749-4957-9817-D265E4F2B95F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25078ADE-5315-4CB3-8EF2-59EA5EC671BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25078ADE-5315-4CB3-8EF2-59EA5EC671BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25078ADE-5315-4CB3-8EF2-59EA5EC671BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25078ADE-5315-4CB3-8EF2-59EA5EC671BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B18E68E-BF4B-48DF-9DE4-29B905654895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B18E68E-BF4B-48DF-9DE4-29B905654895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B18E68E-BF4B-48DF-9DE4-29B905654895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B18E68E-BF4B-48DF-9DE4-29B905654895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3441BCB5-992C-4C27-8511-E9F2BB6536FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3441BCB5-992C-4C27-8511-E9F2BB6536FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3441BCB5-992C-4C27-8511-E9F2BB6536FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3441BCB5-992C-4C27-8511-E9F2BB6536FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0892DBBD-02C4-4A30-B0A9-D8D1603C8B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0892DBBD-02C4-4A30-B0A9-D8D1603C8B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0892DBBD-02C4-4A30-B0A9-D8D1603C8B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0892DBBD-02C4-4A30-B0A9-D8D1603C8B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E6EB57-4304-4316-B29D-DA36D3958782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E6EB57-4304-4316-B29D-DA36D3958782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E6EB57-4304-4316-B29D-DA36D3958782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E6EB57-4304-4316-B29D-DA36D3958782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{824B37E8-FD13-4BDC-A53A-BBD39CB3D7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{824B37E8-FD13-4BDC-A53A-BBD39CB3D7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{824B37E8-FD13-4BDC-A53A-BBD39CB3D7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{824B37E8-FD13-4BDC-A53A-BBD39CB3D7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3DD95FD-8749-4957-9817-D265E4F2B95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DD95FD-8749-4957-9817-D265E4F2B95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3DD95FD-8749-4957-9817-D265E4F2B95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DD95FD-8749-4957-9817-D265E4F2B95F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

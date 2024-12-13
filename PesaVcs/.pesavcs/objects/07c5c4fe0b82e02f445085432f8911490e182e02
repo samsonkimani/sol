@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/qR0A8XY/38=",
+  "success": true,
+  "projectFilePath": "/home/sam/sol/PesaVcs/PesaVcs.CLI/PesaVcs.CLI.csproj",
+  "expectedPackageFiles": [
+    "/home/sam/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.0/microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "/home/sam/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "/home/sam/.nuget/packages/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg.sha512"
+  ],
+  "logs": []
+}
