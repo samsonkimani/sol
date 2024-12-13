@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PesaVcs.Staging")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaa006a0fa3ee82fec80630942d947d6f5694878")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edd6341016200cbced1bc846eb363775b46a2a68")]
 [assembly: System.Reflection.AssemblyProductAttribute("PesaVcs.Staging")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PesaVcs.Staging")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
